@@ -1,0 +1,24 @@
+{
+  "name": "nuxtron",
+  "version": "0.0.1",
+  "description": "Hello World!",
+  "private": true,
+  "main": "dist-electron/main.js",
+  "author": "Lucca",
+  "scripts": {
+    "build": "nuxi build --prerender && electron-builder",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/ui": "^2.11.0",
+    "electron": "^27.1.2",
+    "electron-builder": "^24.9.1",
+    "nuxt": "^3.8.2",
+    "nuxt-electron": "^0.6.0",
+    "vite-plugin-electron": "^0.15.4",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  }
+}
