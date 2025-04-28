@@ -2,8 +2,10 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  srcDir: 'app/',
   devtools: { enabled: true },
   modules: ["nuxt-electron", "@nuxt/ui"],
+  css: ['~/assets/css/main.css'],
   electron: {
     build: [
       {
